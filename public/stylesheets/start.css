@@ -59,7 +59,73 @@ a {
     font-size: 20px; 
     /*change border colour*/
     border:1px #245ec6 solid;
-
     
 }
 
+
+div.profilePic {
+    /* To correctly align image, regardless of content height: */
+    vertical-align: top;
+    display: inline-block;
+    /* To horizontally center images and caption */
+    text-align: center;
+    /* The width of the container also implies margin around the images. */
+}
+
+.picResize {
+  height: auto; 
+  width: auto; 
+  max-width: 150px; 
+  max-height: 150px;
+  float: left;
+}
+
+.caption {
+    /* Make the caption a block so it occupies its own line. */
+    display: block;
+}
+
+.uploadResize {
+  height: auto; 
+  width: auto; 
+  max-width: 20px; 
+  max-height: 20px;
+  float: left;
+  margin: 150px 0px 0px 60px;
+
+}
+
+input {
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  width: 400px;
+  height:70px;
+  font-size: 40px;
+  color: #333333;
+}
+
+.wrapperProfile {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row; 
+  flex-direction: row;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  margin-bottom: -150px;
+}
+
+.goButton {
+  /* Rectangle 7: */
+  background: #E9364C;
+  border-color: #E9364C;
+  border-radius: 18px;
+  height: 75px;
+  width: 100px;
+  /* Go: */
+  font-family: Avenir;
+  font-size: 32px;
+  color: #FFFFFF;
+  letter-spacing: 0px;
+}
