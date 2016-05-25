@@ -11,8 +11,8 @@ router.get('/location', function(req, res, next) {
   res.render('start/location', { title: 'Express' });
 });
 
-router.get('/three_things', function(req, res, next) {
-  res.send('respond with a three_things');
+router.get('/interests', function(req, res, next) {
+  res.render('start/interests', { title: 'Express' });
 });
 
 router.get('/contact', function(req, res, next) {
