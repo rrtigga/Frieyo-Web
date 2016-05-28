@@ -16,11 +16,11 @@ router.get('/interests', function(req, res, next) {
 });
 
 router.get('/contact', function(req, res, next) {
-  res.send('respond with a contact');
+  res.render('start/contact', { title: 'Express' });
 });
 
 router.get('/about', function(req, res, next) {
-  res.send('respond with a about');
+  res.render('start/about', { title: 'Express' });
 });
 
 module.exports = router;
