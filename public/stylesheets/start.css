@@ -5,6 +5,7 @@
 -Location
 -Interests
 -Contact
+-About
  */
 
 body {
@@ -238,10 +239,10 @@ input.contactBox {
 }
 
 /* =========================================================================
-                            Contact
+                            About
 =======================================================================*/
 
-input.aboutBox {
+.aboutBox {
   -webkit-border-radius: 25px;
   -moz-border-radius: 25px;
   border-radius: 12px;
@@ -255,6 +256,3 @@ input.aboutBox {
   margin-bottom: 30px;
 }
 
-.aboutBox::-input-placeholder { 
-  
-}
