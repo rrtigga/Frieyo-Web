@@ -2,6 +2,8 @@
 ––––––––––––––––––––––––––––––––––––––––––––––––––
 -Responsive helpers
 -Text style
+-Location
+-Interests
  */
 
 body {
@@ -104,7 +106,7 @@ div.profilePic {
 
 }
 
-input {
+input.box {
   -webkit-border-radius: 25px;
   -moz-border-radius: 25px;
   border-radius: 25px;
@@ -113,6 +115,21 @@ input {
   height:70px;
   font-size: 40px;
   color: #333333;
+  background-color: #F5F8FA;
+}
+
+input.interestBox {
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  width: 400px;
+  height:70px;
+  font-size: 22px;
+  color: #333333;
+  background-color: #F5F8FA;
+  display: block;
+  margin-bottom: 40px;
 }
 
 .wrapperProfile {
@@ -149,3 +166,55 @@ input {
   max-width: 150px; 
   max-height: 150px;
 }
+
+.chip {
+  display: inline-block;
+  height: 46px;
+  font-size: 20px;
+  font-weight: 300;
+  color: #E9364C;
+  line-height: 46px;
+  padding: 0 60px;
+  border-radius: 20px;
+  background-color: white;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #E9364C;
+  margin: 10px;
+}
+
+.chip img {
+  float: left;
+  margin: 0 8px 0 -12px;
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+}
+
+.continue {
+  display: inline-block;
+  background: #E9364C;
+  border-color: #E9364C;
+  border-radius: 10px;
+  box-sizing: border-box;
+  box-shadow: none;
+  height: 50px;
+  width: 250px;
+  font-family: Avenir;
+  font-size: 18px;
+  color: #FFFFFF;
+  letter-spacing: 0px;
+  margin-left: 300px;
+}
+
+.interestStatement {
+  font-size: 48px;
+  font-weight: 400;
+  display: inline-block;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+
