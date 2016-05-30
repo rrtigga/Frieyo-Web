@@ -7,3 +7,8 @@
 -Brainstorm 5+ more solutions
 
 -Clean up CSS, but don't worry too much about responsiveness and perfection 
+
+
+-Work on CSS Cards and positioning text
+-Get Rough User Profile Page
+-Start thinking more about how you will get users contact others and message them
