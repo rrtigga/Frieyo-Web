@@ -1,10 +1,18 @@
+/*
+Color Table:
+
+purple: #5450DC;
+
+*/
+
+
 /* Table of contents
 ––––––––––––––––––––––––––––––––––––––––––––––––––
 -Responsive helpers
 -Text style
 -Cards
 -Feed
-
+-User
  */
 
 body {
@@ -123,7 +131,7 @@ a {
 
 .card.medium {
   height: 400px;
-  
+
 }
 
 .card.large {
@@ -239,3 +247,45 @@ p {
   font-size: 17.5px;
   font-weight: 450;
 }
+
+/* =========================================================================
+                            User
+=======================================================================*/
+
+.picResize {
+  height: auto; 
+  width: auto; 
+  max-width: 250px; 
+  max-height: 250px;
+}
+
+.purple {
+  color: #5450DC;
+}
+
+/*background: #FFFFFF;
+border: 1px solid #5450DC;
+border-radius: 5px;
+font-family: Avenir-Roman;
+font-size: 18.6px;
+color: #5450DC;
+letter-spacing: 0px;*/
+
+
+.commoninterestBox {
+  display: inline-block;
+  height: 32px;
+  font-size: 16px;
+  font-weight: 300;
+  color: #5450DC;
+  line-height: 28px;
+  padding: 0 15px;
+  border-radius: 8px;
+  background-color: #FFFFFF;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #5450DC;
+  margin: 0px 5px 0px 5px;
+}
+
+
