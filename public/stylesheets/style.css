@@ -75,14 +75,6 @@ a {
                             Cards
 =======================================================================*/
 
-.card-panel {
-  transition: box-shadow .25s;
-  padding: 20px;
-  margin: 0.5rem 0 1rem 0;
-  border-radius: 2px;
-  background-color: #fff;
-}
-
 .card {
   position: relative;
   margin: 0.5rem 0 1rem 0;
@@ -95,30 +87,21 @@ a {
   border-radius: 4px;
 }
 
-.card .card-title {
-  font-size: 24px;
-  font-weight: 300;
-}
-
-.card .card-title.activator {
-  cursor: pointer;
-}
-
-.card.small, .card.medium, .card.large {
+.card.small {
   position: relative;
 }
 
-.card.small .card-image, .card.medium .card-image, .card.large .card-image {
+.card.small .card-image {
   max-height: 60%;
   overflow: hidden;
 }
 
-.card.small .card-content, .card.medium .card-content, .card.large .card-content {
+.card.small .card-content {
   max-height: 40%;
   overflow: hidden;
 }
 
-.card.small .card-action, .card.medium .card-action, .card.large .card-action {
+.card.small .card-action {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -127,15 +110,6 @@ a {
 
 .card.small {
   height: 300px;
-}
-
-.card.medium {
-  height: 400px;
-
-}
-
-.card.large {
-  height: 500px;
 }
 
 .card .card-image {
@@ -153,26 +127,9 @@ a {
   width: 100%;
 }
 
-.card .card-image .card-title {
-  color: #fff;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  padding: 20px;
-}
-
 .card .card-content {
   padding: 20px;
   border-radius: 0 0 2px 2px;
-}
-
-.card .card-content p {
-  margin: 0;
-  color: inherit;
-}
-
-.card .card-content .card-title {
-  line-height: 48px;
 }
 
 .card .card-action {
@@ -192,28 +149,6 @@ a {
 
 .card .card-action p:not(.btn):not(.btn-large):not(.btn-floating):hover {
   color: #5450DC;
-}
-
-.card .card-action + .card-reveal {
-  z-index: 1;
-  padding-bottom: 64px;
-}
-
-.card .card-reveal {
-  padding: 20px;
-  position: absolute;
-  background-color: #fff;
-  width: 100%;
-  overflow-y: auto;
-  top: 100%;
-  height: 100%;
-  z-index: 3;
-  display: none;
-}
-
-.card .card-reveal .card-title {
-  cursor: pointer;
-  display: block;
 }
 
 /* =========================================================================
@@ -248,6 +183,15 @@ p {
   font-weight: 450;
 }
 
+.nameSize {
+  font-size: 20px !important;
+}
+
+.margin-top-40 {
+  margin-top: 40px !important;
+}
+
+
 /* =========================================================================
                             User
 =======================================================================*/
@@ -278,14 +222,68 @@ letter-spacing: 0px;*/
   font-size: 16px;
   font-weight: 300;
   color: #5450DC;
-  line-height: 28px;
+  line-height: 34px;
   padding: 0 15px;
   border-radius: 8px;
   background-color: #FFFFFF;
   border-style: solid;
   border-width: 2px;
   border-color: #5450DC;
-  margin: 0px 5px 0px 5px;
+  margin: 0px 3px 0px 5px;
 }
+
+.facebookBox {
+  display: inline-block;
+  height: 32px;
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
+  line-height: 34px;
+  padding: 0 15px;
+  border-radius: 8px;
+  background-color: #3B539A;
+  margin: 0px 3px 0px 5px;
+}
+
+.twitterBox {
+  display: inline-block;
+  height: 32px;
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
+  line-height: 34px;
+  padding: 0 15px;
+  border-radius: 8px;
+  background-color: #3091FF;
+  margin: 0px 3px 0px 5px;
+}
+
+.linkedinBox {
+  display: inline-block;
+  height: 32px;
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
+  line-height: 34px;
+  padding: 0 15px;
+  border-radius: 8px;
+  background-color: #4875B4;
+  margin: 0px 3px 0px 5px;
+}
+
+.emailBox {
+  display: inline-block;
+  height: 32px;
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
+  line-height: 34px;
+  padding: 0 15px;
+  border-radius: 8px;
+  background-color: #3D3B3B;
+  margin: 0px 3px 0px 5px;
+}
+
+
 
 
