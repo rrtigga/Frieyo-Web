@@ -13,3 +13,13 @@ function contacttoAbout(){
     window.location = "about";
 }
 
+function abouttoFeed(){
+	//redirect to about.ejs
+    window.location = "../feed";
+}
+
+function feedtoUser(){
+	//redirect to about.ejs
+    window.location = "feed/user";
+}
+
