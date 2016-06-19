@@ -2,6 +2,7 @@
 ––––––––––––––––––––––––––––––––––––––––––––––––––
 -Responsive helpers
 -Text style
+-Nav
 
  */
 
@@ -45,7 +46,7 @@ a {
 }
 
 .title {
-	font-size: 80px;
+	font-size: 70px;
 	font-weight: 600;
 }
 
@@ -55,6 +56,10 @@ a {
 }
 
 .fb-button {
+    background: url(../images/facebook-f.png);
+    background-position: 20px 5px;
+    background-repeat: no-repeat;
+    background-size: 8%;
     /*adjust the roundness*/
     background-color: #3B539A;
     color: white;
@@ -62,10 +67,51 @@ a {
     moz-border-radius: 4px;
     webkit-border-radius: 4px;
     /*adjust height and width*/
-    height: 50px;
-    width: 300px;
-    font-size: 20px; 
+    height: 60px;
+    width: 350px;
+    font-size: 22px; 
+    font-weight: 400;
     /*change border colour*/
-    border:1px #245ec6 solid;    
+    border:1px #245ec6 solid;
+    padding-left: 50px;    
 }
 
+.resizeRohit {
+  height: auto; 
+  width: auto; 
+  max-width: 125px; 
+  max-height: 125px;
+  margin-top: 60px;
+}
+
+.useText {
+  font-size: 20px;
+  margin-bottom: -30px;
+  font-weight: 400;
+}
+
+
+
+/* =========================================================================
+                            Nav
+=======================================================================*/
+
+.resizeLogo {
+  height: auto; 
+  width: auto; 
+  max-width: 40px; 
+  max-height: 40px;
+}
+
+.logoText {
+  color: white;
+  font-size: 40px;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+nav {
+  position: absolute;
+  top: -25px;
+  left: 50px;
+}

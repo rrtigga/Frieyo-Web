@@ -4,18 +4,25 @@
     <title>Frieyo</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,minimum-scale=1.0, maximum-scale=1.0">
     <link rel='stylesheet' href='/stylesheets/start.css'/>
+    <link rel='stylesheet' href='/stylesheets/bootstrap.css'/>
   </head>
   <body>
-      <div class="inline-block"> 
-        <h1 class="interestStatement">How do you want to be reached?</h1>
-        <a onclick="contacttoAbout();"><button class="continue">Continue</button></a>
+    <div class="container">
+      <div class="inline-block row"> 
+        <div class="col-md-8">
+          <h1 class="interestStatement">How do you want to be reached?</h1>
+          <p>This is for people getting in touch to discuss common interests.</p>
+          <input class="contactBox" type="text" placeholder="http://www.twitter.com/">
+          <input class="contactBox" type="text" placeholder="http://www.linkedin.com/in/">
+          <input class="contactBox" type="text" placeholder="Email">
+        </div>
       </div>
-        <p>This is for people getting in touch to discuss common interests.</p>
-        <input class="contactBox" type="text" placeholder="http://www.twitter.com/">
-        <input class="contactBox" type="text" placeholder="http://www.linkedin.com/in/">
-        <input class="contactBox" type="text" placeholder="Email">
-
-
+      <div class="inline-block row">
+        <div class="col-md-8">
+          <a onclick="contacttoAbout();"><button class="continue">Continue</button></a>
+        </div>
+      </div>
+    </div>
   <script src="/javascripts/start.js" type="text/javascript"></script> 
   </body>
 </html>

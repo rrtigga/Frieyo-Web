@@ -4,15 +4,22 @@
     <title>Frieyo</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,minimum-scale=1.0, maximum-scale=1.0">
     <link rel='stylesheet' href='/stylesheets/start.css'/>
+    <link rel='stylesheet' href='/stylesheets/bootstrap.css'/>
   </head>
   <body>
+    <div class="col-md-6">
       <div class="inline-block"> 
         <h1 class="interestStatement">Last thing, tell us about yourself!</h1>
-        <a onclick="abouttoFeed()"><button class="continue">All Done</button></a>
-      </div>
         <p>Just so others can get to know you.</p>
         <textarea class="aboutBox" type="text" placeholder="What do you like to do?"></textarea>
         <textarea class="aboutBox" type="text" placeholder="Who do you want to connect with?"></textarea>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <a onclick="abouttoFeed()"><button class="continue">All Done</button></a>
+    </div>
+
+        
 
   <script src="/javascripts/start.js" type="text/javascript"></script> 
   </body>

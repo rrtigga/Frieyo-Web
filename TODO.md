@@ -12,3 +12,6 @@
 -Work on CSS Cards and positioning text
 -Get Rough User Profile Page
 -Start thinking more about how you will get users contact others and message them
+
+
+-Prioritize Functionality right now, start working with storing the data from the login and on-boarding
