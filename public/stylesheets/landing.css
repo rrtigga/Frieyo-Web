@@ -3,7 +3,7 @@
 -Responsive helpers
 -Text style
 -Nav
-
+-Media Queries
  */
 
 
@@ -46,8 +46,8 @@ a {
 }
 
 .title {
-	font-size: 70px;
-	font-weight: 600;
+	font-size: 64px;
+	font-weight: 500;
 }
 
 .sub-statement {
@@ -81,7 +81,7 @@ a {
   width: auto; 
   max-width: 125px; 
   max-height: 125px;
-  margin-top: 60px;
+  margin-top: 30px;
 }
 
 .useText {
@@ -110,8 +110,138 @@ a {
   margin-left: 10px;
 }
 
-nav {
-  position: absolute;
-  top: -25px;
-  left: 50px;
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  position: relative;
+  top: 0;
+  margin-top: -80px;
+  padding: 0;
+  overflow: hidden;
 }
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+ul.topnav li a:hover {background-color: #111;}
+
+ul.topnav li.icon {display: none;}
+
+@media screen and (max-width:680px) {
+  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width:680px) {
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+}
+/* =========================================================================
+                            Media Queries
+=======================================================================*/
+@media screen and (max-width: 769px) {
+
+    .title {
+    font-size: 36px;
+    padding-top: 20px;
+  }
+
+  .resizeRohit {
+    height: auto; 
+    width: auto; 
+    max-width: 110px; 
+    max-height: 110px;
+  }
+  .useText {
+    font-size: 20px;
+  }
+  .fb-button {
+    /*adjust height and width*/
+    height: 50px;
+    width: 250px;
+    font-size: 14px; 
+  }
+
+  .resizeLogo {
+    height: auto; 
+    width: auto; 
+    max-width: 35px; 
+    max-height: 35px;
+  }
+
+  .logoText {
+    font-size: 35px;
+  }
+
+}
+
+
+
+
+
+
+@media screen and (max-width: 480px) {
+
+    .title {
+    font-size: 32px;
+    padding-top: 20px;
+  }
+
+  .resizeRohit {
+    height: auto; 
+    width: auto; 
+    max-width: 100px; 
+    max-height: 100px;
+  }
+  .useText {
+    font-size: 16px;
+  }
+  .fb-button {
+    /*adjust height and width*/
+    height: 50px;
+    width: 250px;
+    font-size: 14px; 
+  }
+
+  .resizeLogo {
+    height: auto; 
+    width: auto; 
+    max-width: 30px; 
+    max-height: 30px;
+  }
+
+  .logoText {
+    font-size: 30px;
+  }
+
+
+}
+
+
+
+
+
