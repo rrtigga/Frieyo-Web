@@ -40,8 +40,13 @@ function fb_login(){
 
 function getData(accessToken) {
   FB.api('/me', 'get', { access_token: accessToken, fields: 'id,name,gender,email,location,friends,likes,picture' }, function(response) {
+    //here's the full object with all the data
     console.log(response);
-});
+  });
+  FB.api("/me/picture?width=1000&height=1000",  function(response) {
+    //here's the url with the large profile picture
+    console.log(response.data.url);
+  });  
   //check if the loginStatus works
   FB.getLoginStatus(function(response) {
     if (response.status === 'connected') {
