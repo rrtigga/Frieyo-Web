@@ -4,23 +4,38 @@
 -Text style
 -Nav
 -Media Queries
+-About
+-Arrow
  */
 
 
 html{
-	background: url(../images/background-purple.png) no-repeat center center fixed; 
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
 }
 body {
-  padding: 50px;
   font-family: Avenir, Helvetica, Arial, sans-serif;
 }
 
 a {
   color: #00B7FF;
+}
+
+#hero{
+  background:url(../images/background-purple.png);
+  background-size: cover;
+  background-position: center center;
+  position:relative;
+  height:100vh;
+  margin: -10px -10px 0;
+}
+
+.header{
+  position:absolute;
+  top:50%;
+  width:100%;
+  -ms-transform: translate(0,-50%); /* IE 9 */
+  -webkit-transform: translate(0,-50%); /* Safari */
+  transform: translate(0,-50%);  
+
 }
 
 
@@ -46,14 +61,10 @@ a {
 }
 
 .title {
-	font-size: 64px;
+	font-size: 60px;
 	font-weight: 500;
 }
 
-.sub-statement {
-	font-size: 48px;
-	font-weight: 400;
-}
 
 .fb-button {
     background: url(../images/facebook-f.png);
@@ -81,13 +92,22 @@ a {
   width: auto; 
   max-width: 125px; 
   max-height: 125px;
-  margin-top: 30px;
+  margin-top: -75px;
 }
 
 .useText {
-  font-size: 20px;
+  font-size: 18px;
   margin-bottom: -30px;
   font-weight: 400;
+}
+
+.aboutText {
+  font-weight: 500;
+  font-size: 42px;
+}
+
+.alignCenter {
+  text-align: center;
 }
 
 
@@ -105,7 +125,8 @@ a {
 
 .logoText {
   color: white;
-  font-size: 40px;
+  font-size: 36px;
+  font-weight: 300;
   display: inline-block;
   margin-left: 10px;
 }
@@ -113,9 +134,10 @@ a {
 ul.topnav {
   list-style-type: none;
   margin: 0;
-  position: relative;
+  position: absolute;
   top: 0;
-  margin-top: -80px;
+  margin-top: -225px;
+  margin-left: 25px;
   padding: 0;
   overflow: hidden;
 }
@@ -177,7 +199,7 @@ ul.topnav li.icon {display: none;}
     max-height: 110px;
   }
   .useText {
-    font-size: 20px;
+    font-size: 18px;
   }
   .fb-button {
     /*adjust height and width*/
@@ -200,13 +222,9 @@ ul.topnav li.icon {display: none;}
 }
 
 
-
-
-
-
 @media screen and (max-width: 480px) {
 
-    .title {
+  .title {
     font-size: 32px;
     padding-top: 20px;
   }
@@ -241,7 +259,74 @@ ul.topnav li.icon {display: none;}
 
 }
 
+/* =========================================================================
+                            About
+=======================================================================*/
+
+h3.purpleText {
+  color: #5450DC;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+p.grayAbout {
+  color: #727172;
+  font-size:16px;
+}
 
 
+/* =========================================================================
+                            Arrow
+=======================================================================*/
+.arrow {
+  position: fixed;
+  left: 50%;
+  top: 155%;
+  margin-left:-20px;
+}
+
+.bounce {
+  -webkit-animation-name: bounce;
+  -moz-animation-name: bounce;
+  -o-animation-name: bounce;
+  animation-name: bounce;
+}
+.animated{-webkit-animation-fill-mode:both;
+-moz-animation-fill-mode:both;
+-ms-animation-fill-mode:both;
+-o-animation-fill-mode:both;
+
+            animation-iteration-count: infinite;
+       -moz-animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+
+animation-fill-mode:both;
+-webkit-animation-duration:2s;
+-moz-animation-duration:2s;
+-ms-animation-duration:2s;
+-o-animation-duration:2s;
+animation-duration:2s;
+}
 
 
+@-webkit-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);} 40% {-webkit-transform: translateY(-30px);}
+  60% {-webkit-transform: translateY(-15px);}
+}
+
+@-moz-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {-moz-transform: translateY(0);}
+  40% {-moz-transform: translateY(-30px);}
+  60% {-moz-transform: translateY(-15px);}
+}
+
+@-o-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {-o-transform: translateY(0);}
+  40% {-o-transform: translateY(-30px);}
+  60% {-o-transform: translateY(-15px);}
+}
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+  40% {transform: translateY(-30px);}
+  60% {transform: translateY(-15px);}
+}
