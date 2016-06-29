@@ -8,24 +8,6 @@
   </head>
   <body>
   <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
-  <script>
-    // Initialize Firebase
-    var config = {
-      apiKey: "AIzaSyCqvvBsoSFzU4NddtvYqKD8bSX5i68Vvpg",
-      authDomain: "project-1806909540976051541.firebaseapp.com",
-      databaseURL: "https://project-1806909540976051541.firebaseio.com",
-      storageBucket: "project-1806909540976051541.appspot.com",
-    };
-    firebase.initializeApp(config);
-    function writeUserData(userId, name, email) {
-      firebase.database().ref('users/' + userId).set({
-        username: name,
-        email: email
-      });
-      console.log("writeUserData");
-    }
-
-  </script>
   <script src="/javascripts/landing.js" type="text/javascript"></script>
   <section id="hero">
     <div class="header">
