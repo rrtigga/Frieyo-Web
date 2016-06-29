@@ -131,12 +131,12 @@ function fb_login(){
 
 function getData(accessToken) {
   var userData;
-
   FB.api('/me', 'get', { access_token: accessToken, fields: 'id,name,gender,email,location,friends,likes,picture' }, function(response) {
     //here's the full object with all the data
-    //console.log(response);
+    //console.log(response.accessToken);
     userData = response;
     console.log(userData);
+    userData["accessToken"]=accessToken;
     FB.api("/me/picture?width=1000&height=1000",  function(response) {
       userData.picture.data.url = response.data.url;
       writeUserData(userData);
