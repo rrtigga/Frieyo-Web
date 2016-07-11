@@ -141,6 +141,7 @@ function getData(accessToken) {
       userData.picture.data.url = response.data.url;
       writeUserData(userData);
     });
+
     
   });
 
@@ -154,7 +155,7 @@ function getData(accessToken) {
       // and signed request each expire
      
       //redirect to start/location.ejs
-      //window.location = "start/location";
+      window.location = "start/interests";
 
     } else if (response.status === 'not_authorized') {
       // the user is logged in to Facebook, 

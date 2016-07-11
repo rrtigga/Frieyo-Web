@@ -24,7 +24,7 @@ a {
 =======================================================================*/
 
 .container {
-  display: flex;
+  display:-webkit-flex;
   justify-content: center;
 }
 .center {
@@ -33,7 +33,7 @@ a {
 }
 
 .flex {
-  display: flex;
+  display:-webkit-flex;
   justify-content: flex-start;
 }
 
@@ -121,19 +121,6 @@ input.box {
   background-color: #F5F8FA;
 }
 
-input.interestBox {
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  border-radius: 6px;
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  width: 300px;
-  height:50px;
-  font-size: 18px;
-  color: #333333;
-  background-color: #F5F8FA;
-  display: block;
-  margin-bottom: 40px;
-}
 
 .wrapperProfile {
   display: -webkit-flex;
@@ -162,6 +149,50 @@ input.interestBox {
 /* =========================================================================
                             Interests
 =======================================================================*/
+
+.topicText {
+  font-family: Avenir-Light;
+  font-size: 24px;
+  color: #3D3B3B;
+  margin-top: 75px;
+}
+
+.select {
+  font-size: 26px;
+  font-weight: 400;
+  margin-top: 100px;
+}
+
+.centerInterests {
+  width: 1000px;
+  text-align: center;
+}
+
+input.interestBox {
+  display: inline-block;
+  width: 850px;
+  height:50px;
+  margin: 0 auto;
+  /* Rectangle 9: */
+  background: #FFFFFF;
+  border: 1px solid #D8D8D8;
+  border-radius: 4px;
+  /* Search for what you : */
+  font-family: Avenir-Roman;
+  font-size: 20px;
+  font-weight: 300;
+  color: #3D3B3B;
+  letter-spacing: 0px;
+  /* Bitmap: */
+  background: url(../images/search-icon.png);
+  background-position: 19px 8px;
+  background-repeat: no-repeat;
+  background-size: 4%;
+  }
+
+.pad-75-left{
+  padding-left: 75px !important;
+}
 
 .picResize-Interests {
   height: auto; 
@@ -219,6 +250,40 @@ input.interestBox {
   display: inline-block;
 }
 
+.blackBackground {
+  background-color: black;
+}
+
+.opacityFilter {
+  background-color: rgba(255,0,0,0.7);
+
+}
+
+.margin-bottom-negsix {
+  margin-bottom: -6px !important;
+}
+
+
+.topicImage {
+    padding-bottom: 75%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+    position: relative !important;
+    height:150px;
+    background-color: rgba(0, 0, 0, 0.8) !important;
+
+}
+
+.text-inside-image {
+  position: absolute;
+  top: 20%;
+  left: 35%;
+  color: white;
+  font-size: 24px;
+  font-weight: 500;
+}
 
 /* =========================================================================
                             Contact
