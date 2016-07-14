@@ -323,17 +323,20 @@
 
       var listItems = this.props.items.map(function(item) {
        return ( 
-            [<h3>{item.topicName}</h3>,
+
+       <div className="column one-quarter"> 
+        <div className="my-container">  
+          [<h3>{item.topicName}</h3>,
             <img src={item.imageURL}/>]
+        </div>
+      </div>
+            
        );
       });
       return (
-      <div className="column one-quarter"> 
-        <div className="my-container">  
-          {listItems}
+        <div>
+          {listItems}      
         </div>
-      </div>
-      
       );
      }
     });
