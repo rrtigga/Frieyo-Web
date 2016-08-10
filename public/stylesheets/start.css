@@ -28,7 +28,7 @@ a {
   justify-content: center;
 }
 .center {
-  width: 800px;
+  padding: 3%;
   text-align: center;
 }
 
@@ -275,8 +275,8 @@ input.interestBox {
     position: relative !important;
     height:150px;
     background-color: rgba(0, 0, 0, 0.8) !important;
-
 }
+
 
 .text-inside-image {
   position: absolute;
@@ -288,20 +288,20 @@ input.interestBox {
   z-index: 1;
 }
 
-.my-container {
+.topicContainer {
     position: relative;
     background-color: #171616;
     overflow: hidden;
     height: 150px;
 }
-.my-container h3 {
-    padding: 50px;
+.topicContainer h3 {
     text-align: center;
     z-index: 2;
     position: relative;
     color: #fff;
+    padding: 50px;
 } 
-.my-container img {
+.topicContainer img {
     position: absolute;
     left: 0;
     top: 0;
@@ -311,41 +311,53 @@ input.interestBox {
     opacity: 0.6;
 }
 
+.topicContainer:hover {
+  background-color: #5450DC;
+}
+
+.topicContainer.active {
+  background-color: #5450DC;
+}
+
+.purpleOverlay {
+  background-color: #5450DC;
+}
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 950px) {
 
-  .my-container {
+  .topicContainer {
     height: 120px;
   }
 
-  .my-container h3 {
-    padding: 30px;
+  .topicContainer h3 {
+    padding: 40px;
   }
-
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
 
-  .my-container {
+  .topicContainer {
     height: 110px;
   }
 
-  .my-container h3 {
-    padding: 20px;
+  .topicContainer h3 {
+    padding: 30px;
+    font-size: 16px;
   }
 
 }
 
 @media only screen and (max-width : 675px) {
 
-  .my-container {
-    height: 90px;
+  .topicContainer {
+    height: 80px;
   }
 
-  .my-container h3 {
-    padding: 10px;
+  .topicContainer h3 {
+   padding: 20px;
+    font-size: 14px;
   }
 
 }
@@ -353,12 +365,13 @@ input.interestBox {
 /* Extra Small Devices, Phones */ 
 @media only screen and (max-width : 480px) {
 
-  .my-container {
-    height: 70px;
+  .topicContainer {
+    height: 60px;
   }
 
-  .my-container h3 {
-    padding: 5px;
+  .topicContainer h3 {
+    padding: 10px;
+    font-size: 14px;
   }
 }
 

@@ -12,333 +12,335 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>
   <script type="text/babel">
       var items = [
-     {
-        "id": 0,
-        "topicName": "Exercise",
-        "imageURL":"https://images.unsplash.com/photo-1445384763658-0400939829cd?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=302971f7c5bff7116de63dadc0240447"
-     },
-     {
-        "id": 1,
-        "topicName": "Tech",
-        "imageURL":"https://images.unsplash.com/photo-1454165205744-3b78555e5572?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=ca8c08d17555247f7580691500bb5351"
-     },
-     {
-        "id": 2,
-        "topicName": "Design",
-        "imageURL":"https://images.unsplash.com/photo-1430760903787-4d91bbf15384?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=de43e34bc7e1f68795ecefced65144ff"
-     },
-     {
-        "id": 3,
-        "topicName": "Art",
-        "imageURL":"https://images.unsplash.com/photo-1461344577544-4e5dc9487184?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=b88d754c608b562b5cf1dcb54a4e402f"
-     },
-     {
-        "id": 4,
-        "topicName": "Fashion",
-        "imageURL":"https://images.unsplash.com/photo-1444401045234-4a2ab1f645c0?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=4372cb6539c799269e343dd9456b7eb3"
-     },
-     {
-        "id": 5,
-        "topicName": "Culture",
-        "imageURL":"https://images.unsplash.com/photo-1464507768659-af94c4614d1a?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=54ad702c172444df372df10f36461d66"
-     },
-     {
-        "id": 6,
-        "topicName": "Photography",
-        "imageURL":"https://images.unsplash.com/26/camera-keys.jpg?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=0fed386f67c528ecb302fb0a762018c0"
-     },
-     {
-        "id": 7,
-        "topicName": "Movies",
-        "imageURL":"https://images.unsplash.com/photo-1458053688450-eef5d21d43b3?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=8d815ef30a5abbb17a9f634bc58c5e6e"
-     },
-     {
-        "id": 8,
-        "topicName": "Sports",
-        "imageURL":"https://images.unsplash.com/photo-1417716226287-2f8cd2e80274?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=811bf42015a01d816ca985244ccc854e"
-     },
-     {
-        "id": 9,
-        "topicName": "Entrepreneurship",
-        "imageURL":"https://images.unsplash.com/1/type-away.jpg?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=e82f84fc36af4f3ac8d49e91fc5a3cfa"
-     },
-     {
-        "id": 10,
-        "topicName": "Gaming",
-        "imageURL":"https://images.unsplash.com/10/wii.jpg?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=38ab2a46e8621c8c23f5e4f10dcc7017"
-     },
-     {
-        "id": 11,
-        "topicName": "Startups",
-        "imageURL":"https://images.unsplash.com/photo-1465657031025-5c9e77ddf9ca?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=0a3dffae9e14e086c210e509cb7fa41d"
-     },
-     {
-        "id": 12,
-        "topicName": "Politics",
-        "imageURL":"https://upload.wikimedia.org/wikipedia/commons/6/64/Capitol_at_Dusk_2.jpg"
-     },
-     {
-        "id": 13,
-        "topicName": "Religion",
-        "imageURL":"https://images.unsplash.com/photo-1415226181422-279a51ca056e?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=c22fc5a633df33318f9f4214015bcd2d"
-     },
-     {
-        "id": 14,
-        "topicName": "Travel",
-        "imageURL":"https://images.unsplash.com/photo-1421218108559-eb1ff78357f5?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=6b769a9d57ccc98499730f81f351a1ac"
-     },
-     {
-        "id": 15,
-        "topicName": "Cooking",
-        "imageURL":"https://images.unsplash.com/reserve/tHTHup3YTN6XsLwf43vY_IMG_8003.jpg?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=198d079e7009b22fe990cfdfffea27b3"
-     },
-     {
-        "id": 16,
-        "topicName": "Anime",
-        "imageURL":"http://cdn.myanimelist.net/s/common/uploaded_files/1444014275-106dee95104209bb9436d6df2b6d5145.jpeg"
-     },
-     {
-        "id": 17,
-        "topicName": "Philantrophy",
-        "imageURL":"https://images.unsplash.com/photo-1413977808283-c0c106512928?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=9b797620782c8a004bf99f4af145078e"
-     },
-     {
-        "id": 18,
-        "topicName": "Environment",
-        "imageURL":"https://images.unsplash.com/46/iYvDeqVGRbebiQv2PIJi_DSC_8407.JPG?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=969bcbd71c28b3063e6a93d3b247d906"
-     },
-     {
-        "id": 19,
-        "topicName": "Exercise",
-        "imageURL":"https://images.unsplash.com/photo-1445384763658-0400939829cd?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=302971f7c5bff7116de63dadc0240447"
-     },
-     {
-        "id": 20,
-        "topicName": "Vegan",
-        "imageURL":"https://images.unsplash.com/31/RpgvvtYAQeqAIs1knERU_vegetables.jpg?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=f7452e128d0aacc006adab4b43d46bc8"
-     },
-     {
-        "id": 21,
-        "topicName": "Health",
-        "imageURL":"https://images.unsplash.com/photo-1434494878577-86c23bcb06b9?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=a60d02470a4ccee96faf66d9676a1734"
-     },
-     {
-        "id": 22,
-        "topicName": "Exercise",
-        "imageURL":"https://images.unsplash.com/photo-1445384763658-0400939829cd?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=302971f7c5bff7116de63dadc0240447"
-     },
-     {
-        "id": 23,
-        "topicName": "Socializing",
-        "imageURL":"https://images.unsplash.com/photo-1416453072034-c8dbfa2856b5?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=ee81d10cae56a758cfdfa2d7dacac10e"
-     },
-     {
-        "id": 24,
-        "topicName": "Party",
-        "imageURL":"https://images.unsplash.com/photo-1425421598808-4a22ce59cc97?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=1744a84b3eeac9b59098a65b0b0c294c"
-     },
-     {
-        "id": 25,
-        "topicName": "Marketing",
-        "imageURL":"https://images.unsplash.com/photo-1452933006409-19b87dc327b7?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=703b8f947dc61bebde4e1fdb5e008eeb"
-     },
-     {
-        "id": 26,
-        "topicName": "Business",
-        "imageURL":"https://images.unsplash.com/photo-1433170897235-615700336230?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=4cc33ad333b238cf760a0451d71a6a33"
-     },
-     {
-        "id": 27,
-        "topicName": "Finance",
-        "imageURL":"https://images.unsplash.com/photo-1459257831348-f0cdd359235f?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=f65cd2b66fad383a51152ce6dbecbb09"
-     },
-     {
-        "id": 28,
-        "topicName": "Science",
-        "imageURL":"https://images.unsplash.com/photo-1453847668862-487637052f8a?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=7e975fe2069f0d7d1e657b7a5efb718d"
-     },
-     {
-        "id": 29,
-        "topicName": "Bowling",
-        "imageURL":"https://images.unsplash.com/photo-1422913687378-69480576789e?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=be38cba1997259fbe6c0d24941d207f0"
-     },
-     {
-        "id": 30,
-        "topicName": "Golf",
-        "imageURL":"https://images.unsplash.com/photo-1443706340763-4b60757a36ce?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=e85628cd20039da2710ea9c075aaf845"
-     },
-     {
-        "id": 31,
-        "topicName": "Hockey",
-        "imageURL":"http://www.glaciericearena.net/wp-content/uploads/2016/02/hockey-1.jpg"
-     },
-     {
-        "id": 32,
-        "topicName": "Yoga",
-        "imageURL":"https://images.unsplash.com/photo-1447452001602-7090c7ab2db3?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=20a1051d4945990d6e80cd14f992c8a6"
-     },
-     {
-        "id": 33,
-        "topicName": "Boxing",
-        "imageURL":"http://www.omaa.org.uk/sites/default/files/Boxing-008.jpg"
-     },
-     {
-        "id": 34,
-        "topicName": "Basketball",
-        "imageURL":"https://images.unsplash.com/photo-1465516001080-8d478e10a809?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=5ec1ea60dd06e656f557635fea65d352"
-     },
-     {
-        "id": 35,
-        "topicName": "Football",
-        "imageURL":"https://images.unsplash.com/photo-1445384763658-0400939829cd?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=302971f7c5bff7116de63dadc0240447"
-     },
-     ,
-     {
-        "id": 36,
-        "topicName": "Tennis",
-        "imageURL":"http://www.nationofchange.org/2015/wp-content/uploads/SerenaWilliams71315.jpg"
-     },
-     {
-        "id": 37,
-        "topicName": "Soccer",
-        "imageURL":"http://g01.a.alicdn.com/kf/HTB1FnOxJpXXXXb1XpXXq6xXFXXX2/Cristiano-font-b-Ronaldo-b-font-Portuguese-font-b-Soccer-b-font-font-b-Player-b.jpg"
-     },
-     {
-        "id": 38,
-        "topicName": "Weight Lifting",
-        "imageURL":"https://images.unsplash.com/photo-1434754205268-ad3b5f549b11?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=2312db214bd659f61b0dccf6dd386e6f"
-     },
-     {
-        "id": 39,
-        "topicName": "Dance",
-        "imageURL":"https://images.unsplash.com/photo-1454486837617-ce8e1ba5ebfe?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=4489e434888c5779b4a52753c0c592fe"
-     },
-     {
-        "id": 40,
-        "topicName": "Exercise",
-        "imageURL":"https://images.unsplash.com/photo-1445384763658-0400939829cd?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=302971f7c5bff7116de63dadc0240447"
-     },
-     {
-        "id": 41,
-        "topicName": "Music",
-        "imageURL":"https://images.unsplash.com/46/dpzDUkJrTHb71Yla1EzF_IMG_4098.jpg?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=2b1995c2871c217311bec7a3f67529b9"
-     },
-     {
-        "id": 42,
-        "topicName": "Singing",
-        "imageURL":"https://images.unsplash.com/photo-1453738773917-9c3eff1db985?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=bbe6db165059e19bf4646f22794e20ad"
-     },
-     {
-        "id": 43,
-        "topicName": "Rapping",
-        "imageURL":"http://www.zastavki.com/pictures/originals/2013/Music_Kid_Cudi_is_rapping_in_the_garage_045369_.jpg"
-     },
-     {
-        "id": 44,
-        "topicName": "Hip-Hop",
-        "imageURL":"https://images.unsplash.com/photo-1466554934129-f71df54ebb27?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=2393c40bcc1a21c8940e891e0a6de5b2"
-     },
-     {
-        "id": 45,
-        "topicName": "Pop",
-        "imageURL":"http://i.huffpost.com/gen/1424929/images/o-KATY-PERRY-MILEY-CYRUS-TAYLOR-SWIFT-facebook.jpg"
-     },
-     {
-        "id": 46,
-        "topicName": "EDC",
-        "imageURL":"http://67.media.tumblr.com/216eb447cfa5e3ec1c15a2e72010d20e/tumblr_o7hdvqS3Lb1u26otko1_1280.jpg"
-     },
-     {
-        "id": 47,
-        "topicName": "Education",
-        "imageURL":"https://images.unsplash.com/photo-1453733190371-0a9bedd82893?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=48c521ea3e67450435523c7135617257"
-     },
-     {
-        "id": 48,
-        "topicName": "Writing",
-        "imageURL":"https://images.unsplash.com/photo-1455390582262-044cdead277a?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=291e2784f0e79036afa4f95fa2e17b6b"
-     },
-     {
-        "id": 49,
-        "topicName": "Journalism",
-        "imageURL":"https://images.unsplash.com/photo-1414919823178-e9d9d0afd0ac?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=459c51b6a8a30aec4b77a14b979dc572"
-     },
-     {
-        "id": 50,
-        "topicName": "Theatre",
-        "imageURL":"https://images.unsplash.com/photo-1458639817867-2c9d4c5dcad4?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=494d6a7b2571b9ca489c03e81c786262"
-     },
-     {
-        "id": 51,
-        "topicName": "Poetry",
-        "imageURL":"http://2.bp.blogspot.com/-56qWt7hkGG0/UZG1hnLxWwI/AAAAAAAAxnw/_UJPYAX2Ez0/s1600/i+love+you+poem+wallpaper+(9).jpg"
-     },
-     {
-        "id": 52,
-        "topicName": "Comedy",
-        "imageURL":"http://wallpapersrang.com/wp-content/uploads/2015/12/funny-facebook-wallpapers-and-pictures.jpg"
-     },
-     {
-        "id": 53,
-        "topicName": "Reading",
-        "imageURL":"https://images.unsplash.com/photo-1431608660976-4fe5bcc2112c?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=2a8f846cd9079442b41ce191c69fa655"
-     },
-     {
-        "id": 54,
-        "topicName": "Fiction",
-        "imageURL":"https://images.unsplash.com/photo-1421338443272-0dde2463976a?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=53149574afa251b3ec019121459352a2"
-     },
-     {
-        "id": 55,
-        "topicName": "Diversity",
-        "imageURL":"http://www.3090management.com/TI_diversity_header_image.jpg"
-     },
-     {
-        "id": 56,
-        "topicName": "LGBT",
-        "imageURL":"https://www.fest300.com/system/images/W1siZiIsIjIwMTUvMDYvMjYvMTYvMDkvNTMvNDkxL0dheV9QcmlkZV9Jc3RhbmJ1bF9TYW1pX1NlcnQuanBnIl0sWyJwIiwidGh1bWIiLCIxNjAweDkwMCMiXV0/Gay_Pride_Istanbul_Sami_Sert.jpg"
-     },
-     {
-        "id": 58,
-        "topicName": "BlackLivesMatter",
-        "imageURL":"http://www.tanqeed.org/wp-content/uploads/2015/08/RAJA-AHMAD_PIC2.jpg"
-     },
-     {
-        "id": 59,
-        "topicName": "Women In Tech",
-        "imageURL":"https://static.pexels.com/photos/7374/startup-photos.jpg"
-     },
-     {
-        "id": 60,
-        "topicName": "Mental Health",
-        "imageURL":"http://jessicagimeno.com/wp-content/uploads/2013/12/dreamstime_xl_19993620.jpg"
-     }
-  ];
+   {
+      "id": 1,
+      "topicName": "Tech",
+      "imageURL":"../images/start/topics/tech.jpeg"
+   },
+   {
+      "id": 2,
+      "topicName": "Design",
+      "imageURL":"../images/start/topics/design.jpeg"
+   },
+   {
+      "id": 3,
+      "topicName": "Art",
+      "imageURL":"../images/start/topics/art.jpeg"
+   },
+   {
+      "id": 4,
+      "topicName": "Fashion",
+      "imageURL":"../images/start/topics/fashion.jpeg"
+   },
+   {
+      "id": 5,
+      "topicName": "Culture",
+      "imageURL":"../images/start/topics/culture.jpeg"
+   },
+   {
+      "id": 6,
+      "topicName": "Photography",
+      "imageURL":"../images/start/topics/photography.jpg"
+   },
+   {
+      "id": 7,
+      "topicName": "Movies",
+      "imageURL":"../images/start/topics/movies.jpeg"
+   },
+   {
+      "id": 8,
+      "topicName": "Sports",
+      "imageURL":"../images/start/topics/sports.jpeg"
+   },
+   {
+      "id": 9,
+      "topicName": "Entrepreneurship",
+      "imageURL":"../images/start/topics/tech.jpeg"
+   },
+   {
+      "id": 10,
+      "topicName": "Gaming",
+      "imageURL":"../images/start/topics/gaming.jpg"
+   },
+   {
+      "id": 11,
+      "topicName": "Startups",
+      "imageURL":"../images/start/topics/startups.jpeg"
+   },
+   {
+      "id": 12,
+      "topicName": "Politics",
+      "imageURL":"../images/start/topics/politics.jpg"
+   },
+   {
+      "id": 13,
+      "topicName": "Religion",
+      "imageURL":"../images/start/topics/religion.jpeg"
+   },
+   {
+      "id": 14,
+      "topicName": "Travel",
+      "imageURL":"../images/start/topics/travel.jpeg"
+   },
+   {
+      "id": 15,
+      "topicName": "Cooking",
+      "imageURL":"../images/start/topics/cooking.jpg"
+   },
+   {
+      "id": 16,
+      "topicName": "Anime",
+      "imageURL":"../images/start/topics/anime.jpeg"
+   },
+   {
+      "id": 17,
+      "topicName": "Philantrophy",
+      "imageURL":"../images/start/topics/philantrophy.jpeg"
+   },
+   {
+      "id": 18,
+      "topicName": "Environment",
+      "imageURL":"../images/start/topics/environment.jpeg"
+   },
+   {
+      "id": 20,
+      "topicName": "Vegan",
+      "imageURL":"../images/start/topics/vegan.jpg"
+   },
+   {
+      "id": 21,
+      "topicName": "Health",
+      "imageURL":"../images/start/topics/health.jpeg"
+   },
+   {
+      "id": 23,
+      "topicName": "Socializing",
+      "imageURL":"../images/start/topics/socializing.jpeg"
+   },
+   {
+      "id": 24,
+      "topicName": "Party",
+      "imageURL":"../images/start/topics/party.jpeg"
+   },
+   {
+      "id": 25,
+      "topicName": "Marketing",
+      "imageURL":"../images/start/topics/marketing.jpeg"
+   },
+   {
+      "id": 26,
+      "topicName": "Business",
+      "imageURL":"../images/start/topics/business.jpeg"
+   },
+   {
+      "id": 27,
+      "topicName": "Finance",
+      "imageURL":"../images/start/topics/finance.jpeg"
+   },
+   {
+      "id": 28,
+      "topicName": "Science",
+      "imageURL":"../images/start/topics/science.jpeg"
+   },
+   {
+      "id": 29,
+      "topicName": "Bowling",
+      "imageURL":"../images/start/topics/bowling.jpeg"
+   },
+   {
+      "id": 30,
+      "topicName": "Golf",
+      "imageURL":"../images/start/topics/golf.jpeg"
+   },
+   {
+      "id": 31,
+      "topicName": "Hockey",
+      "imageURL":"../images/start/topics/hockey.jpg"
+   },
+   {
+      "id": 32,
+      "topicName": "Yoga",
+      "imageURL":"../images/start/topics/yoga.jpeg"
+   },
+   {
+      "id": 33,
+      "topicName": "Boxing",
+      "imageURL":"../images/start/topics/boxing.jpg"
+   },
+   {
+      "id": 34,
+      "topicName": "Basketball",
+      "imageURL":"../images/start/topics/basketball.jpeg"
+   },
+   {
+      "id": 35,
+      "topicName": "Football",
+      "imageURL":"../images/start/topics/football.jpeg"
+   },
+   ,
+   {
+      "id": 36,
+      "topicName": "Tennis",
+      "imageURL":"../images/start/topics/tennis.jpg"
+   },
+   {
+      "id": 37,
+      "topicName": "Soccer",
+      "imageURL":"../images/start/topics/soccer.jpg"
+   },
+   {
+      "id": 38,
+      "topicName": "Weight Lifting",
+      "imageURL":"../images/start/topics/weight-lifting.jpeg"
+   },
+   {
+      "id": 39,
+      "topicName": "Dance",
+      "imageURL":"../images/start/topics/dance.jpeg"
+   },
+   {
+      "id": 40,
+      "topicName": "Exercise",
+      "imageURL":"../images/start/topics/exercise.jpeg"
+   },
+   {
+      "id": 41,
+      "topicName": "Music",
+      "imageURL":"../images/start/topics/music.jpg"
+   },
+   {
+      "id": 42,
+      "topicName": "Singing",
+      "imageURL":"../images/start/topics/singing.jpeg"
+   },
+   {
+      "id": 43,
+      "topicName": "Rapping",
+      "imageURL":"../images/start/topics/rapping.jpg"
+   },
+   {
+      "id": 44,
+      "topicName": "Hip-Hop",
+      "imageURL":"../images/start/topics/hip-hop.jpeg"
+   },
+   {
+      "id": 45,
+      "topicName": "Pop",
+      "imageURL":"../images/start/topics/pop.jpg"
+   },
+   {
+      "id": 46,
+      "topicName": "EDM",
+      "imageURL":"../images/start/topics/edm.jpg"
+   },
+   {
+      "id": 47,
+      "topicName": "Education",
+      "imageURL":"../images/start/topics/education.jpeg"
+   },
+   {
+      "id": 48,
+      "topicName": "Writing",
+      "imageURL":"../images/start/topics/writing.jpeg"
+   },
+   {
+      "id": 49,
+      "topicName": "Journalism",
+      "imageURL":"../images/start/topics/journalism.jpeg"
+   },
+   {
+      "id": 50,
+      "topicName": "Theatre",
+      "imageURL":"../images/start/topics/theatre.jpeg"
+   },
+   {
+      "id": 51,
+      "topicName": "Poetry",
+      "imageURL":"../images/start/topics/poetry.jpg"
+   },
+   {
+      "id": 52,
+      "topicName": "Comedy",
+      "imageURL":"../images/start/topics/comedy.jpg"
+   },
+   {
+      "id": 53,
+      "topicName": "Reading",
+      "imageURL":"../images/start/topics/reading.jpeg"
+   },
+   {
+      "id": 54,
+      "topicName": "Fiction",
+      "imageURL":"../images/start/topics/fiction.jpeg"
+   },
+   {
+      "id": 55,
+      "topicName": "Diversity",
+      "imageURL":"../images/start/topics/diversity.jpg"
+   },
+   {
+      "id": 56,
+      "topicName": "LGBT",
+      "imageURL":"../images/start/topics/lgbt.jpg"
+   },
+   {
+      "id": 58,
+      "topicName": "BlackLivesMatter",
+      "imageURL":"../images/start/topics/blacklivesmatter.jpg"
+   },
+   {
+      "id": 59,
+      "topicName": "Women In Tech",
+      "imageURL":"../images/start/topics/womenintech.jpg"
+   },
+   {
+      "id": 60,
+      "topicName": "Mental Health",
+      "imageURL":"../images/start/topics/mentalhealth.jpg"
+   }
+];
 
     var RepeatModule = React.createClass({
-     getDefaultProps: function() {
-      return { items: [] }
-     },
-     render: function() {
+      getDefaultProps: function () {
+        return { items: [] }
+      },
 
-      var listItems = this.props.items.map(function(item) {
-       return ( 
+      getInitialState: function () {
+        return { items: [] }
+      },
 
-       <div className="column one-quarter"> 
-        <div className="my-container">  
-          [<h3>{item.topicName}</h3>,
-            <img src={item.imageURL}/>]
-        </div>
-      </div>
+      componentDidMount: function () {
+        const items = this.props.items.map((item) => {
+          return Object.assign(item, { isActive: false });
+        });
+
+        this.setState({ items });
+      },
+
+      handleClick: function (e, index) {
+        const items = this.state.items
+          .map((item, i) => {
+            if (index === i) {
+              return Object.assign(item, { isActive: !item.isActive });
+            }
             
-       );
-      });
-      return (
-        <div>
-          {listItems}      
-        </div>
-      );
-     }
+            return item;
+          });
+
+        this.setState({ items });
+      },
+      render: function() {
+        const items = this.state.items.map((item, index) => {
+          return <div className="column one-quarter" key={ index }>
+            <div
+              className={ `topicContainer ${ item.isActive ? 'purpleOverlay' : '' }` }
+              onClick={ (e) => this.handleClick(e, index) }>
+              <h3>{ item.topicName }</h3>, <img src={ item.imageURL } />
+            </div>
+          </div>
+        });
+        return <div>{ items }</div>
+      }
     });
     ReactDOM.render(<RepeatModule items={items} />,     
      document.getElementById('topics'));
@@ -353,37 +355,19 @@
       <div class="row">
         <div id="topics"></div> 
       </div>
-
-      <div class="row">
-        <div class="column one-quarter"> 
-          <div class="my-container">  
-            <h3>Fashion</h3>
-            <img src="https://images.unsplash.com/photo-1444401045234-4a2ab1f645c0?ixlib=rb-0.3.5&q=80&fm=jp&crop=entropy&s=4372cb6539c799269e343dd9456b7eb3" />
-          </div>
-        </div>
-        <div class="column one-quarter"> 
-          <div class="my-container">  
-            <h3>Fashion</h3>
-            <img src="https://images.unsplash.com/photo-1444401045234-4a2ab1f645c0?ixlib=rb-0.3.5&q=80&fm=jp&crop=entropy&s=4372cb6539c799269e343dd9456b7eb3" />
-          </div>
-        </div>
-        <div class="column one-quarter"> 
-          <div class="my-container">  
-            <h3>Fashion</h3>
-            <img src="https://images.unsplash.com/photo-1444401045234-4a2ab1f645c0?ixlib=rb-0.3.5&q=80&fm=jp&crop=entropy&s=4372cb6539c799269e343dd9456b7eb3" />
-          </div>
-        </div>
-        <div class="column one-quarter"> 
-          <div class="my-container">  
-            <h3>Fashion</h3>
-            <img src="https://images.unsplash.com/photo-1444401045234-4a2ab1f645c0?ixlib=rb-0.3.5&q=80&fm=jp&crop=entropy&s=4372cb6539c799269e343dd9456b7eb3" />
-          </div>
-        </div>
-      </div>
     </div>
   </div>
-
   <script src="/javascripts/start.js" type="text/javascript"></script> 
-  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script type="text/javascript">
+    // $('.topicContainer').on('click', function (e) {
+    //     $('.topicContainer').toggleClass("purpleOverlay");
+    // });
+
+    // $('div.topicContainer').click(function(){
+    //    $('.topicContainer').toggleClass("purpleOverlay");
+    //    console.log("here I go");
+    // });
+  </script>
   </body>
 </html>

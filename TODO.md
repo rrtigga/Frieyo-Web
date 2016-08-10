@@ -15,3 +15,10 @@
 
 
 -Prioritize Functionality right now, start working with storing the data from the login and on-boarding
+
+
+
+-Clean up react js code, and make it more efficient 
+-Keep on building, make it a functional prototype. 
+-Get Grunt, Bower, and Sass set up with this project
+-Smaller Pictures for topics, edit json file 

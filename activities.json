@@ -1,10 +1,5 @@
 [
    {
-      "id": 0,
-      "topicName": "Exercise",
-      "imageURL":"https://images.unsplash.com/photo-1445384763658-0400939829cd?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=302971f7c5bff7116de63dadc0240447"
-   },
-   {
       "id": 1,
       "topicName": "Tech",
       "imageURL":"https://images.unsplash.com/photo-1454165205744-3b78555e5572?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=ca8c08d17555247f7580691500bb5351"
@@ -95,11 +90,6 @@
       "imageURL":"https://images.unsplash.com/46/iYvDeqVGRbebiQv2PIJi_DSC_8407.JPG?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=969bcbd71c28b3063e6a93d3b247d906"
    },
    {
-      "id": 19,
-      "topicName": "Exercise",
-      "imageURL":"https://images.unsplash.com/photo-1445384763658-0400939829cd?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=302971f7c5bff7116de63dadc0240447"
-   },
-   {
       "id": 20,
       "topicName": "Vegan",
       "imageURL":"https://images.unsplash.com/31/RpgvvtYAQeqAIs1knERU_vegetables.jpg?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=f7452e128d0aacc006adab4b43d46bc8"
@@ -108,11 +98,6 @@
       "id": 21,
       "topicName": "Health",
       "imageURL":"https://images.unsplash.com/photo-1434494878577-86c23bcb06b9?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=a60d02470a4ccee96faf66d9676a1734"
-   },
-   {
-      "id": 22,
-      "topicName": "Exercise",
-      "imageURL":"https://images.unsplash.com/photo-1445384763658-0400939829cd?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=302971f7c5bff7116de63dadc0240447"
    },
    {
       "id": 23,
@@ -232,7 +217,7 @@
    },
    {
       "id": 46,
-      "topicName": "EDC",
+      "topicName": "EDM",
       "imageURL":"http://67.media.tumblr.com/216eb447cfa5e3ec1c15a2e72010d20e/tumblr_o7hdvqS3Lb1u26otko1_1280.jpg"
    },
    {
