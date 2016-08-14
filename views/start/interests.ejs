@@ -334,8 +334,8 @@
           return <div className="column one-quarter" key={ index }>
             <div
               className={ `topicContainer ${ item.isActive ? 'purpleOverlay' : '' }` }
-              onClick={ (e) => this.handleClick(e, index) }>
-              <h3>{ item.topicName }</h3>, <img src={ item.imageURL } />
+              onClick={ (e) => this.handleClick(e, index) } data-value={item.topicName}>
+              <h3>{ item.topicName }</h3>, <img className="full-height-image" src={ item.imageURL } />
             </div>
           </div>
         });
@@ -347,14 +347,21 @@
   </script>
   </head>
   <body>
+  <img class="logo-size-edit" src="../images/logoPurple.png">
   <div class="container">
     <div class="centerInterests row">
       <p class="select">Select 3 or more activities to personalize your feed</p>
-      <input class="interestBox pad-75-left" type="text" placeholder="Search for activities">
-      <p class="topicText">Popular Activities</p>
+<!--       <input class="interestBox pad-75-left" type="text" placeholder="Search for activities">
+ -->      
+<!--       <p class="topicText">Popular Activities</p>
+ -->      
       <div class="row">
         <div id="topics"></div> 
       </div>
+    <div class="topic-progress-bar">
+      <span class="topic-done-text">Great picks! Select more activities or hit Done to proceed</span>
+      <button class="topic-picker-done-button">Done</button>
+    </div>
     </div>
   </div>
   <script src="/javascripts/start.js" type="text/javascript"></script> 
