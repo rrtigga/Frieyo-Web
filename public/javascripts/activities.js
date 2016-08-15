@@ -287,6 +287,20 @@ var items = [
    }
 ];
 
+
+
+console.log(localStorage.getItem('userID') +" <----userID here");
+//so I have the userID
+
+//use the userID to access the user in Firebase you want to store the array of selectedActivities inside
+
+//store the window.newActiveItems under the key "selectedActivities"
+
+
+
+/*React Code Below */
+
+
 var RepeatModuleIndex = React.createClass({
 	getInitialState: function () {
 		return { allItems:[], activeItems: [] }
@@ -297,17 +311,17 @@ var RepeatModuleIndex = React.createClass({
 
 	handleClick: function (event, item) {
 		event.preventDefault();
-		var newActiveItems = this.state.activeItems.slice();
-		var index = newActiveItems.indexOf(item);
+		window.newActiveItems = this.state.activeItems.slice();
+		var index = window.newActiveItems.indexOf(item);
 		if(index !== -1){
-			//remove item from newActiveItems
-			newActiveItems.splice(index, 1);
+			//remove item from window.newActiveItems
+			window.newActiveItems.splice(index, 1);
 		}
 		else{
-			newActiveItems.push(item);
+			window.newActiveItems.push(item);
 		}
-		console.log(newActiveItems);
-		this.setState({ activeItems: newActiveItems});
+		console.log(window.newActiveItems);
+		this.setState({ activeItems: window.newActiveItems});
 
 	}, 
 	render: function() {

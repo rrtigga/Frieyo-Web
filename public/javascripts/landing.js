@@ -1,6 +1,5 @@
+
 //firebase below --------
-
-
 var userID;
 
 // Initialize Firebase
@@ -15,6 +14,10 @@ firebase.initializeApp(config);
 function writeUserData(userObject) {
   firebase.database().ref('users/' + userID).set(userObject);
   console.log(userObject + " saved in database");
+
+  //use localStorage to store logged in user session
+  localStorage.setItem('userID', userID);
+  console.log(localStorage.getItem('userID'));
 }
 //writeUserData("savage","savage","savage");
 
@@ -113,17 +116,17 @@ function statusChangeCallback(response) {
 function fb_login(){
     FB.login(function(response) {
         if (response.authResponse) {
-            console.log('Welcome!  Fetching your information.... ');
-            console.log(response); // dump complete info
-            var accessToken =   FB.getAuthResponse()['accessToken'];
-            console.log('Access Token = '+ accessToken);
-            userID = FB.getAuthResponse()['userID']; //get FB UID
-            console.log("userID: "+ userID);
-            //refer to getData() function below
-            getData(accessToken);
+          console.log('Welcome!  Fetching your information.... ');
+          console.log(response); // dump complete info
+          var accessToken =   FB.getAuthResponse()['accessToken'];
+          console.log('Access Token = '+ accessToken);
+          userID = FB.getAuthResponse()['userID']; //get FB UID
+          console.log("userID: "+ userID);
+          //refer to getData() function below
+          getData(accessToken);
         } else {
-            //user hit cancel button
-            console.log('User cancelled login or did not fully authorize.');
+          //user hit cancel button
+          console.log('User cancelled login or did not fully authorize.');
         }
     }, {'scope': 'public_profile,email,user_friends,user_likes,user_location'});
 }
