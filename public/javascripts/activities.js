@@ -333,7 +333,7 @@ var RepeatModuleIndex = React.createClass({
 			return <RepeatModule key={item.id} handleClick={this.handleClick} active={active} item={item} />;
 		}.bind(this));
 		return (
-			<div>
+			<div className="row">
 				{repeatModules}
 			</div>
 		);
@@ -346,15 +346,15 @@ var RepeatModule = React.createClass({
 	},
 	render:function(){
 		return (
-			<div className="column one-quarter">
-				<div 
-					onClick={this.moduleItemClick}
-					className={`topicContainer ${this.props.active ? 'purpleOverlay' : '' }`} 
-					data-value={this.props.item.topicName}>
-					<h3>{this.props.item.topicName}</h3>,
-					<img className="full-height-image" src={this.props.item.imageURL}/>
-				 </div>
-			</div>
+      <div className="column _25">
+			<div 
+				onClick={this.moduleItemClick}
+				className={`topicContainer ${this.props.active ? 'purpleOverlay' : '' }`} 
+				data-value={this.props.item.topicName}>
+				<h3>{this.props.item.topicName}</h3>,
+				<img className="full-height-image" src={this.props.item.imageURL}/>
+			 </div>
+      </div>
 		);
 	}
 });

@@ -8,9 +8,9 @@ function intereststoContact(){
     window.location = "contact";
 }
 
-function contacttoAbout(){
+function contacttoFeed(){
 	//redirect to about.ejs
-    window.location = "about";
+    window.location = "../feed";
 }
 
 function abouttoFeed(){

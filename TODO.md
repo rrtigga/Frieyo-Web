@@ -4,5 +4,12 @@
 -Figure out how to get the user who is logged in
 
 
+-insert a class for every n react
+
 -Create Contact Page
+-Make Contact Page Responsive
+
+
+-Implement functionality for contact page
+
 -Create below popup after topics are picked

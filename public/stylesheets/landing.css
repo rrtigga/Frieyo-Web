@@ -43,7 +43,7 @@ a {
                             Responsive Helpers
 =======================================================================*/
 
-.container {
+.container-custom {
   display:-webkit-flex;
   -webkit-justify-content: center;
 }

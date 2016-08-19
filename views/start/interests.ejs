@@ -4,7 +4,7 @@
     <title>Frieyo</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,minimum-scale=1.0, maximum-scale=1.0">
     <link rel='stylesheet' href='/stylesheets/start.css'/>
-    <link rel='stylesheet' href='/stylesheets/pills.css'/>
+    <link rel='stylesheet' href='/stylesheets/flexbox.css'/>
   <!-- The core React library -->
   <script src="https://fb.me/react-15.2.0.js"></script>
   <!-- The ReactDOM Library -->
@@ -16,16 +16,16 @@
   </head>
   <body>
   <img class="logo-size-edit" src="../images/logoPurple.png">
-  <div class="container">
-    <div class="centerInterests row">
+  <div class="container-custom">
+    <div class="centerInterests">
       <p class="select">Select 3 or more activities to personalize your feed</p>
 <!--       <input class="interestBox pad-75-left" type="text" placeholder="Search for activities">
  -->      
 <!--       <p class="topicText">Popular Activities</p>
  -->      
-      <div class="row">
-        <div id="topics"></div> 
-      </div>
+    <div class="row">
+      <div id="topics"></div>
+    </div> 
     <div class="topic-progress-bar">
       <span class="topic-done-text">Great picks! Select more activities or hit Done to proceed</span>
       <button type="button" onclick="doneActivities();" class="topic-picker-done-button">Done</button> 
