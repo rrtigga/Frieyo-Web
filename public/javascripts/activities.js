@@ -314,10 +314,12 @@ var RepeatModuleIndex = React.createClass({
 		window.newActiveItems = this.state.activeItems.slice();
 		var index = window.newActiveItems.indexOf(item);
 		if(index !== -1){
-			//remove item from window.newActiveItems
+         //check if array is empty, if so set display:none to the topic-bar
 			window.newActiveItems.splice(index, 1);
 		}
-		else{
+		else {
+         //check if array has more than 3 items
+         //if more than 3 items, then take away display:none from the topic bar
 			window.newActiveItems.push(item);
 		}
 		console.log(window.newActiveItems);
@@ -333,7 +335,7 @@ var RepeatModuleIndex = React.createClass({
 			return <RepeatModule key={item.id} handleClick={this.handleClick} active={active} item={item} />;
 		}.bind(this));
 		return (
-			<div className="row">
+			<div className="row flex-center">
 				{repeatModules}
 			</div>
 		);
@@ -346,14 +348,15 @@ var RepeatModule = React.createClass({
 	},
 	render:function(){
 		return (
-      <div className="column _25">
+      <div className="column _20">
 			<div 
-				onClick={this.moduleItemClick}
-				className={`topicContainer ${this.props.active ? 'purpleOverlay' : '' }`} 
-				data-value={this.props.item.topicName}>
-				<h3>{this.props.item.topicName}</h3>,
-				<img className="full-height-image" src={this.props.item.imageURL}/>
-			 </div>
+   			onClick={this.moduleItemClick}
+   			className={`topicContainer ${this.props.active ? 'purpleOverlay' : '' }`} 
+   			data-value={this.props.item.topicName}>
+   			<h3>{this.props.item.topicName}</h3>,
+   			<img className="full-height-image" src={this.props.item.imageURL}/>
+            <img className={`check ${this.props.active ? 'not-none' : 'none'}`} src="../images/start/Check.png"/>
+			</div>
       </div>
 		);
 	}

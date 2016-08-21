@@ -13,3 +13,7 @@
 -Implement functionality for contact page
 
 -Create below popup after topics are picked
+
+-Take out backspace for input box
+
+-Only show topic done bar when only 3 are selected

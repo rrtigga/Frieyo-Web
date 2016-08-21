@@ -1,3 +1,10 @@
+.start-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+
 /* Grid */
 
 .column {
@@ -5,30 +12,52 @@
 }
 
 @media screen and (min-width: 800px) {
+  .flex-center {
+    justify-content: center;
+  }
   .row {
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
+    align-items: center;
   }
   .column {
     flex: 1;
   }
-  ._25 {
-    flex-basis: 23%;
+
+  .column-7-half {
+    flex-basis: 7.5%;
   }
+
+  ._20 {
+    flex-basis: 20%;
+  }
+
   ._5 {
     flex: 5;
   }
+
+  ._75 {
+    flex: 7.5;
+  }
+
 }
 /* Style */
 
 
 .column {
-  padding: 15px;
+  padding: 5px;
+  margin: 5px 0;
+}
+
+.column-no-padding {
   margin: 5px 0;
 }
 
 main {
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.align-inherit {
+  align-items: inherit;
 }
