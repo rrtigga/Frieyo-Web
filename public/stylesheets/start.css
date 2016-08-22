@@ -461,9 +461,10 @@ input.interestBox {
   display: !none;
 }
 
-.show {
-  display: ;
+.up {
+  transform: translateY(-60px)
 }
+
 
 /* =========================================================================
                             Contact

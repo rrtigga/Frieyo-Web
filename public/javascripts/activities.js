@@ -315,11 +315,17 @@ var RepeatModuleIndex = React.createClass({
 		var index = window.newActiveItems.indexOf(item);
 		if(index !== -1){
          //check if array is empty, if so set display:none to the topic-bar
+         if(newActiveItems.length <= 3){
+            document.getElementById("topic-progress-bar").style.transform="translateY(60px)";
+         }
 			window.newActiveItems.splice(index, 1);
 		}
 		else {
          //check if array has more than 3 items
-         //if more than 3 items, then take away display:none from the topic bar
+         //if more than 3 items, then show the topic bar
+         if(newActiveItems.length >= 2){
+            document.getElementById("topic-progress-bar").style.transform="translateY(0px)";
+         }
 			window.newActiveItems.push(item);
 		}
 		console.log(window.newActiveItems);
