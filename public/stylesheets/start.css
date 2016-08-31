@@ -26,6 +26,7 @@ a {
 
 .container-custom {
   display:-webkit-flex;
+  -webkit-justify-content: center;
   justify-content: center;
 }
 .center {
@@ -286,10 +287,6 @@ input.interestBox {
 
 }
 
-{
-  margin-bottom: -6px !important;
-}
-
 
 .topicImage {
     padding-bottom: 75%;
@@ -504,6 +501,8 @@ img.check {
   max-height: 40px;
   opacity: 1;
 }
+
+
 
 
 /* =========================================================================

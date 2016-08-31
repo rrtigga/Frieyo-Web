@@ -12,8 +12,13 @@
 
 -Implement functionality for contact page
 
--Create below popup after topics are picked
-
 -Take out backspace for input box
 
--Only show topic done bar when only 3 are selected
+-Validation for contact page
+-Submitting contact information to Firebase
+-Clean up front-end for contact form input
+
+-Return HTML content of a URL
+-Figure out how to compare custom string to my set HTML content I put in that String
+
+

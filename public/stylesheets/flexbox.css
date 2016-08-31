@@ -8,35 +8,45 @@
 /* Grid */
 
 .column {
+  -webkit-flex-basis: 100%;
   flex-basis: 100%;
 }
 
 @media screen and (min-width: 800px) {
   .flex-center {
+    -webkit-justify-content: center;
     justify-content: center;
   }
   .row {
+    display: -webkit-flex;
     display: flex;
+    -webkit-flex-flow: row wrap;
     flex-flow: row wrap;
+    -webkit-align-items: center;
     align-items: center;
   }
   .column {
+    -webkit-flex: 1;
     flex: 1;
   }
 
   .column-7-half {
+    -webkit-flex-basis: 7.5%;
     flex-basis: 7.5%;
   }
 
   ._20 {
+    -webkit-flex-basis: 20%;
     flex-basis: 20%;
   }
 
   ._5 {
+    -webkit-flex: 5;
     flex: 5;
   }
 
   ._75 {
+    -webkit-flex: 7.5;
     flex: 7.5;
   }
 
@@ -59,5 +69,6 @@ main {
 }
 
 .align-inherit {
+  -webkit-align-items: inherit;
   align-items: inherit;
 }

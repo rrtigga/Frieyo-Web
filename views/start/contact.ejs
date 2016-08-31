@@ -11,21 +11,21 @@
       <img class="logo-size-edit" src="../images/logoPurple.png">
       <div class="row">
         <div class="column-no-padding _75">
-          <h2 class="interestStatement">Last step, how can you be reached?</h2>
+          <h2 class="interestStatement">Last step, show your personality!</h2>
         </div>
       <div class="column-no-padding _25">
-        <a onclick="contacttoFeed();"><button class="continue">All Done!</button></a>
+        <a onclick="submitContacts();"><button class="continue">All Done!</button></a>
       </div>
       </div>
       <div class="row">
-          <p class="descriptionText">This is for people getting in touch to discuss common interests.</p>
+          <p class="descriptionText">Just to help people get to know you.</p>
       </div>
       <div class="row align-inherit">
         <div class="column-7-half">
           <img class="socialIcons" src="/images/start/instagram.png">
         </div>
         <div class="column-7-half">
-          <input class="contactBox" type="text" value="@">
+          <input id="instagramHandle" class="contactBox" type="text" placeholder="Instagram Handle">
         </div>
       </div>
       <div class="row align-inherit">
@@ -33,7 +33,7 @@
           <img class="socialIcons" src="/images/start/twitter.png">
         </div>
         <div class="column-7-half">
-          <input class="contactBox" type="text" value="@">
+          <input id="twitterHandle" class="contactBox" type="text" placeholder="Twitter Handle">
         </div>
       </div>
       <div class="row align-inherit">
@@ -41,7 +41,7 @@
           <img class="socialIcons" src="/images/start/linkedin.png">
         </div>
         <div class="column-7-half">
-          <input class="contactBox" type="text" value="http://www.linkedin.com/in/">
+          <input id="linkedIn" class="contactBox" type="text" value="http://www.linkedin.com/in/">
         </div>
       </div>
       <div class="row align-inherit">
@@ -49,7 +49,7 @@
           <img class="socialIcons" src="/images/start/email.png">
         </div>
         <div class="column-7-half">
-          <input class="contactBox" type="text" value="Email">
+          <input id="email" class="contactBox" type="text" placeholder="Email">
         </div>
       </div>
       <div class="row align-inherit">
@@ -57,10 +57,12 @@
           <img class="socialIcons" src="/images/start/personal-website.png">
         </div>
         <div class="column-7-half">
-          <input class="contactBox" type="text" value="http://">
+          <input id="personalWebsite" class="contactBox" type="text" value="http://">
         </div>
-      </div>
+      </div>      
     </div>
-  <script src="/javascripts/start.js" type="text/javascript"></script> 
+  <script src="/javascripts/start.js" type="text/javascript"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="/javascripts/start/contact.js" type="text/javascript"></script> 
   </body>
 </html>
